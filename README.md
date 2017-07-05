@@ -5,15 +5,12 @@ For this project I used a dataset from UCI Machine Learning Repository.
 Dataset and relevant details : http://archive.ics.uci.edu/ml/datasets/Air+Quality
 
 ## Goal: 
-
 to write a Spark App to predict "Temperature in C" - T field in the dataset, 24hrs ahead. 
 
 to build:
-
 mvn package
 
 to run (assuming that spark is in “Applications” folder): 
-
 /Applications/spark-1.6.1/bin/spark-submit --class "SimpleApp" --master local[4] target/simple- project-1.0.jar
 
 My spark app reads raw data from “AirQualityUCI.csv”. Then it makes data cleaning and writes clean data and labels to “AirQualityUCI_WithLabels.csv.”Label is the temperature 24 hours late.
